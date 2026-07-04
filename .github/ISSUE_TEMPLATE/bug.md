@@ -1,7 +1,7 @@
 ---
-name: "[Bug] 이슈 제목을 적어주세요"
+name: Bug
 about: Bug
-title: ''
+title: "[Bug] 이슈 제목을 적어주세요"
 labels: ''
 assignees: ''
 

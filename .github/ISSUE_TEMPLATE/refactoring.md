@@ -1,7 +1,7 @@
 ---
-name: "[Refactor] 이슈 제목을 적어주세요"
+name: Refactoring
 about: Refactoring
-title: ''
+title: "[Refactor] 이슈 제목을 적어주세요"
 labels: ''
 assignees: ''
 
