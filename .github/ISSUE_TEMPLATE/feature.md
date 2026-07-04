@@ -1,7 +1,7 @@
 ---
-name: "[Feat] 이슈 제목을 적어주세요"
+name: Feature
 about: Feature
-title: ''
+title: "[Feat] 이슈 제목을 적어주세요"
 labels: ''
 assignees: ''
 
