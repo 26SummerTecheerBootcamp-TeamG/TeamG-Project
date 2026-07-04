@@ -76,3 +76,33 @@ TravelHelper/
 ├── backend/     # Django + DRF
 └── frontend/    # React + Vite
 ```
+
+## 브랜치 전략
+
+`main`과 `develop`은 보호되어 있어 직접 push할 수 없습니다. 반드시 브랜치를 만들어 PR로 병합합니다.
+
+### 브랜치 구조
+
+- **main**: 배포용. 안정된 코드만 유지
+- **develop**: 개발 통합 브랜치. 평소 작업은 여기로 병합
+- **feature/**: 각자 기능 작업 브랜치
+
+흐름: `feature/기능` → (PR) → `develop` → (PR) → `main`
+
+### 브랜치 이름 규칙
+
+- `feature/기능이름` — 새 기능 (예: `feature/flight-agent`)
+- `fix/버그이름` — 버그 수정 (예: `fix/budget-bug`)
+
+### 작업 흐름
+
+1. 최신 develop 받기: `git checkout develop` 후 `git pull`
+2. 새 브랜치 만들기: `git checkout -b feature/기능이름`
+3. 작업 후 커밋: `git add .` 후 `git commit -m "작업 내용"`
+4. 브랜치 올리기: `git push -u origin feature/기능이름`
+5. GitHub에서 develop으로 PR 생성 → 리뷰 → 병합
+
+### 규칙
+
+- PR은 최소 1명의 승인을 받아야 병합됩니다.
+- `develop → main` 병합은 배포 시점에 별도 PR로 진행합니다.
